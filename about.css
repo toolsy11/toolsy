@@ -1,0 +1,159 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background: #f9fafb;
+   color: #222;
+   line-height: 1.6;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+header {
+   background: #3f51b5;
+   padding: 1rem 0;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+
+nav ul li {
+   margin: 0 1.5rem;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 1.1rem;
+   transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+   color: #ffca28;
+}
+
+main {
+   flex: 1;
+   max-width: 900px;
+   margin: 2rem auto;
+   padding: 0 1rem;
+}
+
+.about-hero {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+   font-size: 3rem;
+   color: #3f51b5;
+   margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+   font-size: 1.2rem;
+   color: #555;
+}
+
+.about-content h2 {
+   font-size: 2rem;
+   color: #303f9f;
+   margin-bottom: 1rem;
+   border-bottom: 3px solid #ffca28;
+   display: inline-block;
+   padding-bottom: 0.2rem;
+}
+
+.about-content p {
+   font-size: 1rem;
+   margin-bottom: 1.3rem;
+   color: #444;
+}
+
+.buttons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 1.5rem;
+}
+
+.btn {
+   background: #3f51b5;
+   color: #fff;
+   padding: 0.75rem 1.6rem;
+   border-radius: 30px;
+   text-decoration: none;
+   font-weight: 600;
+   box-shadow: 0 6px 15px rgba(63, 81, 181, 0.3);
+   transition: background 0.3s ease, box-shadow 0.3s ease;
+   display: inline-flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: 1rem;
+}
+
+.btn:hover {
+   background: #ffca28;
+   color: #222;
+   box-shadow: 0 8px 20px rgba(255, 202, 40, 0.6);
+}
+
+/* Different button colors */
+.whatsapp-channel {
+   background: #25d366;
+   box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-channel:hover {
+   background: #1ebe57;
+   box-shadow: 0 8px 20px rgba(27, 178, 79, 0.6);
+}
+
+.whatsapp-group {
+   background: #128c7e;
+   box-shadow: 0 6px 15px rgba(18, 140, 126, 0.3);
+}
+
+.whatsapp-group:hover {
+   background: #0f6d65;
+   box-shadow: 0 8px 20px rgba(15, 109, 101, 0.6);
+}
+
+.telegram-group {
+   background: #0088cc;
+   box-shadow: 0 6px 15px rgba(0, 136, 204, 0.3);
+}
+
+.telegram-group:hover {
+   background: #006699;
+   box-shadow: 0 8px 20px rgba(0, 102, 153, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+   nav ul {
+      flex-direction: column;
+      gap: 1rem;
+   }
+   
+   main {
+      margin: 1rem;
+   }
+   
+   .btn {
+      width: 100%;
+      justify-content: center;
+   }
+}

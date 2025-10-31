@@ -1,0 +1,123 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+
+body {
+ background: #f0f2f5;
+ color: #333;
+}
+
+header {
+ background: linear-gradient(135deg, #4b6cb7, #182848);
+ padding: 1rem 2rem;
+ color: white;
+}
+
+nav ul {
+ display: flex;
+ list-style: none;
+ gap: 2rem;
+ justify-content: center;
+}
+
+nav a {
+ color: white;
+ text-decoration: none;
+ font-weight: 600;
+ transition: color 0.3s;
+}
+
+nav a:hover {
+ color: #ffd700;
+}
+
+nav ul li:first-child a{
+  color: #ffca28!important;
+}
+
+
+
+.hero {
+ text-align: center;
+ padding: 3rem 1rem;
+ background: #fff;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+ font-size: 2.5rem;
+ margin-bottom: 0.5rem;
+ color: #182848;
+}
+
+.hero p {
+ font-size: 1.2rem;
+}
+
+.featured-tools {
+ padding: 2rem 1rem;
+ text-align: center;
+}
+
+.featured-tools h2 {
+ font-size: 2rem;
+ margin-bottom: 2rem;
+ color: #4b6cb7;
+}
+
+.tool-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 1.5rem;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.tool-card {
+ background: #fff;
+ padding: 1.5rem;
+ border-radius: 12px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tool-card i {
+ color: #4b6cb7;
+ margin-bottom: 1rem;
+}
+
+.tool-card h3 {
+ margin: 0.5rem 0;
+ font-size: 1.2rem;
+}
+
+.tool-card p {
+ font-size: 0.95rem;
+ color: #555;
+}
+
+.tool-link {
+ display: inline-block;
+ margin-top: 1rem;
+ background: #4b6cb7;
+ color: white;
+ padding: 0.5rem 1rem;
+ border-radius: 6px;
+ text-decoration: none;
+ font-weight: 600;
+ transition: background 0.3s;
+}
+
+.tool-link:hover {
+ background: #3551a3;
+}
+
+
