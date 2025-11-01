@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Contact / Feedback</title>
+   <link rel="stylesheet" href="css/contact-style.css" />
+</head>
+
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Feedback</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <main>
+      <section class="contact-hero">
+         <h1>We’d Love Your Feedback!</h1>
+         <p>Let us know your thoughts, questions or suggestions.</p>
+      </section>
+      
+      <section class="contact-form">
+         <form id="feedbackForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit">Send Feedback</button>
+            <p id="successMessage" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+               Your feedback has been sent!
+            </p>
+         </form>
+         
+      </section>
+   </main>
+   <script>
+      document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+         e.preventDefault(); // Stop form from submitting
+         document.getElementById("successMessage").style.display = "block"; // Show success message
+         this.reset(); // Clear form fields
+      });
+   </script>
+   
+</body>
+
+</html>
